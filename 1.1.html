@@ -1,0 +1,19 @@
+<script>
+var word = "I am rana. I   want to     be a programmer";
+function wordCount(word){
+
+    var count = 0;
+for(var i = 0; i < word.length; i++){
+    if(word[i] == " " & word[i+1]!= " "){
+        count ++;
+    }
+
+}
+count++;
+return count;
+}
+
+console.log(wordCount(word));
+
+
+</script>
