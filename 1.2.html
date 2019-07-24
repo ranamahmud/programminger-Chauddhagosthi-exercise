@@ -1,0 +1,18 @@
+<script>
+    var paragraph = "Duis eiusmod velit deserunt non voluptate excepteur quis. Cupidatat labore Lorem id voluptate nulla ut aliquip magna nostrud ad nulla deserunt cupidatat esse. Proident officia fugiat consectetur labore minim ullamco deserunt aliqua aliquip sunt non pariatur. Est do officia commodo labore in. Sunt ut elit consectetur do enim consequat sunt consectetur exercitation exercitation duis. Occaecat nulla excepteur non reprehenderit sunt do. Eiusmod exercitation velit consequat ad incididunt magna.";
+    function paragraphCount(paragraph){
+    
+        var count = 0;
+    for(var i = 0; i < paragraph.length; i++){
+        if(paragraph[i] == "." ){
+            count ++;
+        }
+    
+    }
+    return count;
+    }
+    
+    console.log(paragraphCount(paragraph));
+    alert(paragraphCount(paragraph));
+    
+    </script>
