@@ -1,0 +1,35 @@
+<script>
+    function removeEvens(numbers){
+        var select = [];
+        for(var i  = 0; i < numbers.length; i++){
+        var word = numbers[i];
+        var index = select.lastIndexOf(word);
+        
+        // get all indexes
+        var indexes = [];
+        for(j = 0; j < numbers.length; j++){
+            if(numbers[j] === word){
+                indexes.push(j);
+            }
+           
+        }
+    
+        if(indexes.length %2 == 1 && select.lastIndexOf(numbers[indexes[0]]) == -1){
+        select.push(numbers[indexes[0]])
+    
+    
+        } 
+       
+    
+    
+    }
+    
+        return select;
+    }
+    
+    numbers = [1,2,3,4,5,1,2,2,7,8,8]
+    console.log(numbers);
+    console.log(removeEvens(numbers));
+    </script>
+    
+    
