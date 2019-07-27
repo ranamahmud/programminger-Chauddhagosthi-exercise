@@ -1,0 +1,18 @@
+<script>
+    function reverseSentenceWord(sentence){
+        var revSentence = [];
+        sentence = sentence.split(" ");
+        for(var i = 0; i <sentence.length; i++){
+            var reverse = "";
+            for(var j = sentence[i].length-1; j>=0; j--)
+                reverse+= sentence[i][j];
+            revSentence.push(reverse);
+        }
+        revSentence = revSentence.join(" ");
+        return revSentence;
+    }
+    console.log("I'm rana");
+    console.log(reverseSentenceWord("I'm rana"));
+    console.log("I am a good boy");
+    console.log(reverseSentenceWord("I am a good boy"));
+    </script>
