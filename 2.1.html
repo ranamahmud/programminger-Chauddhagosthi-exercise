@@ -1,0 +1,34 @@
+<script>
+function removeDuplicateWord(sentence){
+    sentence = sentence.split(" ");
+    var select = [];
+    for(var i  = 0; i < sentence.length; i++){
+    var word = sentence[i];
+    var index = select.lastIndexOf(word);
+    
+    // get all indexes
+    var indexes = [];
+    for(j = i; j < sentence.length; j++){
+        if(sentence[j] === word){
+            indexes.push(j);
+        }
+       
+    }
+    if(indexes.length>1 && select.lastIndexOf(sentence[indexes[0]]) == -1){
+    select.push(sentence[indexes[0]])
+
+
+    }
+
+
+}
+
+select = select.join(" ");
+    return select;
+}
+
+sentence = "pitu ritu jitu situ mitu nitu bitu jitu jitu bitu situ litu gitu litu pitu situe mitu litu litu";
+console.log(sentence);
+console.log(removeDuplicateWord(sentence));
+</script>
+

@@ -1,0 +1,23 @@
+<script>
+    var paragraph = "Welcome to my page.How are you?I'm fine.What a surprise!You're here.Duis eiusmod velit deserunt non voluptate excepteur quis. Cupidatat labore Lorem id voluptate nulla ut aliquip magna nostrud ad nulla deserunt cupidatat esse. Proident officia fugiat consectetur labore minim ullamco deserunt aliqua aliquip sunt non pariatur. Est do officia commodo labore in. Sunt ut elit consectetur do enim consequat sunt consectetur exercitation exercitation duis. Occaecat nulla excepteur non reprehenderit sunt do. Eiusmod exercitation velit consequat ad incididunt magna.";
+    function vowelCount(paragraph){
+        paragraph = paragraph.toLowerCase();
+        var count = 0;
+    for(var i = 0; i < paragraph.length; i++){
+       
+        if(paragraph[i] == "a" || paragraph[i] =="e"
+        || paragraph[i] == "i" ||
+        paragraph[i] == "o"||
+        paragraph[i] == "u"
+        ){
+            count ++;
+        }
+    
+    }
+    return count;
+    }
+    
+    console.log(vowelCount(paragraph));
+    alert("Total Vowel Count "+vowelCount(paragraph));
+    
+    </script>1.
